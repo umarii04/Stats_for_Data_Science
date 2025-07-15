@@ -1,1 +1,90 @@
 # Stats_for_Data_Science
+# Statistics Notebooks Summary
+
+This markdown file summarizes the main Jupyter notebooks in this folder for easy reference and GitHub upload.
+
+---
+
+## 1. 1_central_tendency.ipynb
+**Topic:** Measures of Central Tendency (Mean, Median, Mode)
+
+- **Summary:**
+  - Explains and demonstrates how to calculate mean, median, and mode for numerical and categorical data.
+  - Uses pandas, numpy, and seaborn for data analysis.
+  - Includes code for geometric and harmonic means, and standard error.
+- **Key Code:**
+  - Calculation of mean, median, mode using pandas/numpy.
+  - Example: `df["age"].mean()`, `df["age"].median()`, `df["class"].mode()`
+- **Result:**
+  - Shows how to interpret and compute central tendency for real datasets.
+
+---
+
+## 2. 2_data_distributions.ipynb
+**Topic:** Data Distributions
+
+- **Summary:**
+  - Covers types of data distributions (normal, skewed, etc.).
+  - Visualizes distributions using histograms and boxplots.
+- **Key Code:**
+  - Plotting with matplotlib/seaborn.
+- **Result:**
+  - Visual understanding of data spread and shape.
+
+---
+
+## 3. 3_skewness_and_kurtosis.ipynb
+**Topic:** Skewness and Kurtosis
+
+- **Summary:**
+  - Explains skewness (asymmetry) and kurtosis (tailedness) of distributions.
+  - Shows how to compute and interpret these statistics.
+- **Key Code:**
+  - `scipy.stats.skew()`, `scipy.stats.kurtosis()`
+- **Result:**
+  - Helps in understanding data normality and outliers.
+
+---
+
+## 4. 4_chi_square_test.ipynb
+**Topic:** Chi-Square Test
+
+- **Summary:**
+  - Demonstrates chi-square test for independence using contingency tables.
+  - Example with Titanic dataset: association between sex and survival.
+- **Key Code:**
+  - `pd.crosstab()`, `scipy.stats.chi2_contingency()`
+- **Result:**
+  - Shows how to interpret p-values and test hypotheses for categorical data.
+
+---
+
+## 5. 5_shapiro_wilk_normalization_test.ipynb
+**Topic:** Shapiro-Wilk Normality Test
+
+- **Summary:**
+  - Tests if data is normally distributed.
+- **Key Code:**
+  - `scipy.stats.shapiro()`
+- **Result:**
+  - Guides on when to use parametric vs non-parametric tests.
+
+---
+
+## 12_Chi_squared_case_study.ipynb
+**Topic:** Chi-Squared Test Case Study
+
+- **Summary:**
+  - Applies chi-squared test to real datasets (e.g., tips dataset from seaborn).
+  - Compares observed vs expected frequencies for categorical variables (e.g., vegetarian vs non-vegetarian, sex vs smoker, sex vs time).
+- **Key Code:**
+  - `chisquare(observed, expected)`
+  - `chi2_contingency(pd.crosstab(df['sex'], df['smoker']))`
+- **Result:**
+  - Interprets p-values to accept/reject null hypothesis about association between variables.
+
+---
+
+**Note:**
+- Each notebook contains code, explanations, and result interpretation for the respective statistical method.
+- For details, see the code and markdown cells in each notebook.
